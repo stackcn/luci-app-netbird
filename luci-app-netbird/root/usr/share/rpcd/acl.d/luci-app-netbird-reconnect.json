@@ -1,0 +1,11 @@
+{
+	"luci-app-netbird-reconnect": {
+		"description": "Allow LuCI to schedule a NetBird reconnect without dropping its own RPC transport",
+		"write": {
+			"ubus": {
+				"luci.netbird.reconnect": [ "do_reconnect" ]
+			},
+			"uci": [ "netbird" ]
+		}
+	}
+}
